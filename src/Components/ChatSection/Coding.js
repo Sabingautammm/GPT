@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVolumeHigh } from '@fortawesome/free-solid-svg-icons';
 
-export default function Chat({ messages = [], darkMode }) {
+export default function Coding({ messages = [], darkMode }) {
   // Function to handle text-to-speech
   const speakMessage = (text) => {
     const utterance = new SpeechSynthesisUtterance(text);
@@ -21,7 +21,7 @@ export default function Chat({ messages = [], darkMode }) {
       {messages.length === 0 ? (
         <div className="flex items-center justify-center h-full">
           <p className={`text-3xl font-bold text-center ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-            This is the Genral Section!<br/>
+            This is the Coding Section!<br/>
             Start a conversation to get started...
           </p>
         </div>
