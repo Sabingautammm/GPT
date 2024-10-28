@@ -31,6 +31,7 @@ export default function LoginForm({ darkMode }) {
 
   return (
     <div className={`flex items-center justify-center min-h-screen p-4 ${darkMode ? 'bg-gray-900' : 'bg-gradient-to-r from-indigo-50 to-purple-50'}`}>
+      
       <motion.div
         className={`w-full max-w-lg p-10 rounded-2xl shadow-2xl border border-gray-300 transition-transform transform hover:scale-105 duration-300 ease-in-out ${darkMode ? 'bg-gray-800 text-gray-200' : 'bg-white text-gray-900'}`}
         initial={{ opacity: 0, scale: 0.95 }}
@@ -44,7 +45,13 @@ export default function LoginForm({ darkMode }) {
             className="w-36"
           />
         </div> */}
-
+<div>
+         <Link to='/'>
+          <button className='ms-2 text-2xl'>
+          <i class="fa fa-arrow-left" aria-hidden="true" ></i>
+          </button>
+          </Link>
+         </div>
         <motion.h2
           className="text-3xl font-bold text-center mb-8"
           initial={{ opacity: 0, y: -30 }}

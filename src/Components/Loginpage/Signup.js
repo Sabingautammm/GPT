@@ -43,6 +43,13 @@ export default function Signup({ darkMode }) {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
+        <div>
+         <Link to='/'>
+          <button className='ms-2 text-2xl'>
+          <i class="fa fa-arrow-left" aria-hidden="true" ></i>
+          </button>
+          </Link>
+         </div>
         <motion.h2
           className="text-3xl font-bold text-center mb-8"
           initial={{ opacity: 0, y: -30 }}
